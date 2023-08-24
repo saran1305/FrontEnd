@@ -5,7 +5,7 @@ function BookList() {
     const [books, setBooks] = useState([]);
 
     useEffect(() => {
-        axios.get('http://sampleapp-env.eba-rhxsp8r3.ap-southeast-2.elasticbeanstalk.com/WeatherForecast')
+        axios.get('http://sample-backend-env.eba-3cwch8bj.ap-southeast-2.elasticbeanstalk.com/WeatherForecast')
             .then(response => {
                 console.log('response', response)
                 setBooks(response.data);
